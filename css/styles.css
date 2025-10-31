@@ -1,0 +1,159 @@
+:root {
+  /* Colors: */
+  --clr-navy-950: #0e1323;
+  --clr-navy-900: #1c204b;
+  --clr-navy-800: #33397a;
+  --clr-navy-200: #bbc0ff;
+  --clr-orange-300: #ff8b64;
+  --clr-purple-700: #7335d2;
+  --clr-purple-600: ##5747ea;
+  --clr-purple-500: #7078c9;
+  --clr-blue-300: #55c2e6;
+  --clr-pink-400: #ff5e7d;
+  --clr-green-400: #4bcf82;
+  --clr-yellow-300: #f1c75b;
+  --clr-grey-200: #d8d8d8;
+
+  /* Semantic colors */
+  --clr-attribution: #3e52a3;
+
+  /* Font sizes (in rem) */
+  --fs-xs: 0.9375rem; /* 15px */
+  --fs-sm: 1.125rem; /* 18px */
+  --fs-md: 1.5rem; /* 24px */
+  --fs-lg: 2rem; /* 32px body text */
+  --fs-xl: 2.5rem; /* 40px */
+  --fs-2xl: 3.5rem; /* 56px */
+
+  /* Font weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+
+  /* Containers */
+  --wrapper-width: 90rem; /* 1440px */
+  --grid-width: 69.75rem; /* 1116px */
+  --grid-height: 32.5rem; /* 520px */
+  --grid-column-width: 15.94rem; /* 255px */
+
+  /* Spacing scale (rem) */
+  --space-sm: 1rem; /* 21px */
+  --space-md: 1.5rem; /* 24px */
+  --space-lg: 2rem; /* 32px */
+  --space-xl: 2.5rem; /* 40px */
+
+  /* Border-radius scale */
+  --radius-sm: 0.25rem; /* 4px */
+  --radius-md: 0.5rem; /* 8px */
+  --radius-lg: 1rem; /* 16px */
+  --radius-circle: 50%; /* circular elements */
+
+  /* Line heights */
+  --lh-name: 1.175; /* 47px lh for text at 40px */
+}
+
+/* 
+********************************
+SELF-HOSTING FONT:
+********************************
+*/
+
+/* VARIABLE FONT: */
+@font-face {
+  font-family: 'Rubik';
+  src: url('/assets/fonts/Rubik-VariableFont_wght.woff2')
+      format('woff2-variations'),
+    url('/assets/fonts/Rubik-VariableFont_wght.woff') format('woff');
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 
+********************************
+GLOBAL CSS VALUES:
+********************************
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-regular);
+  /* line-height: var(--lh-base); */
+  letter-spacing: 0;
+
+  color: var(--clr-navy-200);
+
+  background-color: var(--clr-navy-950);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 
+********************************
+MAIN:
+********************************
+*/
+h1 {
+  text-align: center;
+  font-size: var(--fs-xl);
+  color: var(--clr-purple-950);
+}
+
+/* 
+********************************
+FOOTER:
+********************************
+*/
+
+.attribution {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+
+  font-size: var(--fs-xs);
+  color: var(--clr-attribution);
+}
+
+/* LINKS */
+/* Default State */
+.attribution a:link {
+  color: var(--clr-attribution);
+  text-decoration: none;
+}
+
+/* Visited State */
+.attribution a:visited {
+  color: var(--clr-attribution);
+}
+
+/* State On Hover / Whilst being clicked */
+.attribution a:hover,
+.attribution a:active {
+  opacity: 75%;
+}
+
+/* 
+********************************
+UTILITY CLASSES:
+********************************
+*/
