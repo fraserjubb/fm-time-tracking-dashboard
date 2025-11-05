@@ -52,6 +52,7 @@
 
   /* Line heights */
   --lh-name: 1.175; /* 47px lh for text at 40px */
+  --lh-period: 1.167;
 }
 
 /* 
@@ -168,14 +169,27 @@ MAIN:
 
 .dashboard__period ul {
   list-style: none;
+  font-size: var(--fs-sm);
+  line-height: var(--lh-period);
+  color: var(--clr-purple-500);
 }
 
-.dashboard__period ul li {
+.dashboard__period li {
   margin-bottom: var(--space-sm);
 }
 
-.dashboard__period ul li:last-child {
+.dashboard__period li:last-child {
   margin-bottom: 0;
+}
+
+.dashboard__period li:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.dashboard__period li,
+.dashboard__period li * {
+  cursor: pointer;
 }
 
 .dashboard__stats-banner {
