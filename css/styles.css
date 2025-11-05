@@ -193,8 +193,8 @@ MAIN:
   width: fit-content;
   height: fit-content;
   margin-right: 18px;
-  margin-top: -15px;
-  opacity: 0.35;
+  margin-top: -6px;
+  opacity: 0.9;
 }
 
 .dashboard__stats {
@@ -276,3 +276,26 @@ FOOTER:
 UTILITY CLASSES:
 ********************************
 */
+.orange-bg {
+  background-color: var(--clr-orange-300);
+}
+
+.blue-bg {
+  background-color: var(--clr-blue-300);
+}
+
+.pink-bg {
+  background-color: var(--clr-pink-400);
+}
+
+.green-bg {
+  background-color: var(--clr-green-400);
+}
+
+.purple-bg {
+  background-color: var(--clr-purple-700);
+}
+
+.yellow-bg {
+  background-color: var(--clr-yellow-300);
+}
