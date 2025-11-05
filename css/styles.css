@@ -201,6 +201,7 @@ MAIN:
 .dashboard__period li:hover {
   cursor: pointer;
   color: white;
+  opacity: 0.75;
 }
 
 .dashboard__period li,
@@ -254,6 +255,7 @@ MAIN:
 
 .dashboard__stats-button:hover {
   cursor: pointer;
+  opacity: 0.75;
 }
 
 .dashboard__stats-activity {
@@ -328,4 +330,8 @@ UTILITY CLASSES:
 
 .yellow-bg {
   background-color: var(--clr-yellow-300);
+}
+
+.white-text {
+  color: white;
 }
