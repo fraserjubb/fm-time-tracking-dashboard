@@ -38,13 +38,13 @@ function updateDashboard(period) {
 
     statCurrentList[i].textContent = `${item.timeframes[period].current}hrs`;
 
-    if (period === 'daily') {
-      statPreviousList[i].textContent = `Yesterday - ${item.timeframes.daily.previous}hrs`;
-    } else if (period === 'weekly') {
-      statPreviousList[i].textContent = `Last Week - ${item.timeframes.weekly.previous}hrs`;
-    } else if (period === 'monthly') {
-      statPreviousList[i].textContent = `Last Month - ${item.timeframes.monthly.previous}hrs`;
-    }
+    const previousLabels = {
+      daily: 'Yesterday',
+      weekly: 'Last Week',
+      monthly: 'Last Month',
+    };
+
+    statPreviousList[i].textContent = `${previousLabels[period]} - ${item.timeframes.daily.previous}hrs`;
   });
 }
 
