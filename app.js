@@ -1,7 +1,5 @@
 const statTitleList = Array.from(document.querySelectorAll('.dashboard__stats-activity'));
-
 const statCurrentList = Array.from(document.querySelectorAll('.dashboard__stats-current'));
-
 const statPreviousList = Array.from(document.querySelectorAll('.dashboard__stats-previous'));
 
 const dailyBtn = document.querySelector('#daily');
@@ -21,7 +19,10 @@ function loadDashboardData() {
       dashboardData = data;
       return data;
     })
-    .catch(error => console.log(error));
+    .catch(error => {
+      console.error('Failed to load dashboard data:', error);
+      return null;
+    });
 }
 
 loadDashboardData().then(() => updateDashboard('weekly'));
