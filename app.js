@@ -27,17 +27,17 @@ function loadDashboardData() {
 
 loadDashboardData().then(() => updateDashboard('weekly'));
 
-function updateDashboard(period) {
+function updateDashboard(timeframe) {
   // Style Text
-  dailyBtn.classList.toggle('white-text', period === 'daily');
-  weeklyBtn.classList.toggle('white-text', period === 'weekly');
-  monthlyBtn.classList.toggle('white-text', period === 'monthly');
+  dailyBtn.classList.toggle('white-text', timeframe === 'daily');
+  weeklyBtn.classList.toggle('white-text', timeframe === 'weekly');
+  monthlyBtn.classList.toggle('white-text', timeframe === 'monthly');
 
   // Update stats shown
   dashboardData.forEach((item, i) => {
     statTitleList[i].textContent = item.title;
 
-    statCurrentList[i].textContent = `${item.timeframes[period].current}hrs`;
+    statCurrentList[i].textContent = `${item.timeframes[timeframe].current}hrs`;
 
     const previousLabels = {
       daily: 'Yesterday',
@@ -45,7 +45,7 @@ function updateDashboard(period) {
       monthly: 'Last Month',
     };
 
-    statPreviousList[i].textContent = `${previousLabels[period]} - ${item.timeframes.daily.previous}hrs`;
+    statPreviousList[i].textContent = `${previousLabels[timeframe]} - ${item.timeframes.daily.previous}hrs`;
   });
 }
 

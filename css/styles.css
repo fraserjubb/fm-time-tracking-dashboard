@@ -58,7 +58,7 @@
 
   /* Line heights */
   --lh-profile-name: 1.175; /* 47px lh for text at 40px */
-  --lh-period: 1.167;
+  --lh-timeframe: 1.167;
 }
 
 /* 
@@ -186,7 +186,7 @@ Grid
 }
 
 /* Timeframe Card */
-.dashboard__period {
+.dashboard__timeframe {
   display: flex;
   align-items: end;
   align-self: flex-end;
@@ -197,29 +197,29 @@ Grid
   background-color: var(--clr-navy-900);
 }
 
-.dashboard__period ul {
+.dashboard__timeframe ul {
   list-style: none;
   font-size: var(--fs-sm);
-  line-height: var(--lh-period);
+  line-height: var(--lh-timeframe);
   color: var(--clr-purple-500);
 }
 
-.dashboard__period li {
+.dashboard__timeframe li {
   margin-bottom: var(--space-sm);
 }
 
-.dashboard__period li:last-child {
+.dashboard__timeframe li:last-child {
   margin-bottom: 0;
 }
 
-.dashboard__period li:hover {
+.dashboard__timeframe li:hover {
   cursor: pointer;
   color: white;
   opacity: 0.75;
 }
 
-.dashboard__period li,
-.dashboard__period li * {
+.dashboard__timeframe li,
+.dashboard__timeframe li * {
   cursor: pointer;
 }
 
