@@ -10,16 +10,16 @@ TABLET:
     --fs-xl: 1.5rem; /* 24px */
 
     /* Containers */
-    --profile-card-height: 133px;
-    --timeframe-card-height: 203px;
-    --stats-height: 180px; /* 180px */
-    --image-size: 64px;
+    --profile-card-height: 8.313rem; /* 133px */
+    --timeframe-card-height: 12.69rem; /* 203px */
+    --stats-height: 11.25rem; /* 180px */
+    --image-size: 4rem; /* 64px */
 
     /* Grid Values */
-    --grid-width: 612px;
-    --grid-height: 677px;
-    --grid-column-width: 188px;
-    --grid-gap: 24px;
+    --grid-width: 38.25rem; /* 612px */
+    --grid-height: 42.31rem; /* 677px */
+    --grid-column-width: 11.75rem; /* 188px */
+    --grid-gap: 1.5rem; /* 24px */
   }
 
   /* Grid */
@@ -38,7 +38,7 @@ TABLET:
 
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: var(--grid-gap);
     padding: var(--space-lg);
   }
 
@@ -50,7 +50,7 @@ TABLET:
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 8px;
+    gap: 0.5rem; /* 8px */
   }
 
   /* Timeframe Card */
@@ -59,11 +59,11 @@ TABLET:
     grid-row: 1 / 2;
 
     justify-content: center;
-    padding: 25px;
+    padding: 1.5rem; /* 24px */
   }
   .dashboard__timeframe ul {
     display: flex;
-    gap: 32px;
+    gap: 2rem; /* 32px */
   }
 
   .dashboard__timeframe li {
@@ -72,8 +72,8 @@ TABLET:
 
   /* Stats Card */
   .dashboard__stats-banner img {
-    margin-top: -10px; /* -10px */
-    margin-right: 8px; /* 8px */
+    margin-top: -0.625rem; /* -10px */
+    margin-right: 0.5rem; /* 8px */
   }
 
   .dashboard__stats {
@@ -81,11 +81,11 @@ TABLET:
   }
 
   .dashboard__stats-header {
-    margin-bottom: 16px;
+    margin-bottom: 1rem; /* 16px */
   }
 
   .dashboard__stats-button {
-    width: 12px;
+    width: 0.75rem; /* 12px */
   }
 }
 
