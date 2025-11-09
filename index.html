@@ -14,7 +14,8 @@
   </head>
   <body>
     <main class="wrapper">
-      <section class="dashboard-grid grid--rows grid--4-cols grid--3-cols">
+      <section class="dashboard-grid grid--rows grid--4-cols grid--3-cols grid--1-cols">
+        <!-- Profile Card -->
         <div class="dashboard-item dashboard__profile-card">
           <img src="assets/images/image-jeremy.png" alt="Profile photo for User" class="dashboard__profile-photo" />
           <div class="dashboard__profile-text">
@@ -22,12 +23,111 @@
             <h3 class="dashboard__profile-name">Jeremy Robson</h3>
           </div>
         </div>
+
+        <!-- Timeframe Selection -->
         <div class="dashboard-item dashboard__timeframe">
           <ul>
             <li id="daily">Daily</li>
             <li id="weekly">Weekly</li>
             <li id="monthly">Monthly</li>
           </ul>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="dashboard-item">
+          <div class="dashboard__stats-banner orange-bg">
+            <img src="assets/images/icon-work.svg" alt="" class="banner-image" />
+          </div>
+          <div class="dashboard__stats">
+            <div class="dashboard__stats-header">
+              <h3 class="dashboard__stats-activity">Title</h3>
+              <button class="dashboard__stats-button"><img src="assets/images/icon-ellipsis.svg" alt="" /></button>
+            </div>
+            <div class="dashboard__stats-hours">
+              <p class="dashboard__stats-current">xhrs</p>
+              <p class="dashboard__stats-previous">Last Week - xxhrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-item">
+          <div class="dashboard__stats-banner blue-bg">
+            <img src="assets/images/icon-play.svg" alt="" class="banner-image" />
+          </div>
+          <div class="dashboard__stats">
+            <div class="dashboard__stats-header">
+              <h3 class="dashboard__stats-activity">Title</h3>
+              <button class="dashboard__stats-button"><img src="assets/images/icon-ellipsis.svg" alt="" /></button>
+            </div>
+            <div class="dashboard__stats-hours">
+              <p class="dashboard__stats-current">xhrs</p>
+              <p class="dashboard__stats-previous">Last Week - xxhrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-item">
+          <div class="dashboard__stats-banner pink-bg">
+            <img src="assets/images/icon-study.svg" alt="" class="banner-image" />
+          </div>
+          <div class="dashboard__stats">
+            <div class="dashboard__stats-header">
+              <h3 class="dashboard__stats-activity">Title</h3>
+              <button class="dashboard__stats-button"><img src="assets/images/icon-ellipsis.svg" alt="" /></button>
+            </div>
+            <div class="dashboard__stats-hours">
+              <p class="dashboard__stats-current">xhrs</p>
+              <p class="dashboard__stats-previous">Last Week - xxhrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-item">
+          <div class="dashboard__stats-banner green-bg">
+            <img src="assets/images/icon-exercise.svg" alt="" class="banner-image" />
+          </div>
+          <div class="dashboard__stats">
+            <div class="dashboard__stats-header">
+              <h3 class="dashboard__stats-activity">Title</h3>
+              <button class="dashboard__stats-button"><img src="assets/images/icon-ellipsis.svg" alt="" /></button>
+            </div>
+            <div class="dashboard__stats-hours">
+              <p class="dashboard__stats-current">xhrs</p>
+              <p class="dashboard__stats-previous">Last Week - xxhrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-item">
+          <div class="dashboard__stats-banner purple-bg">
+            <img src="assets/images/icon-social.svg" alt="" class="banner-image" />
+          </div>
+          <div class="dashboard__stats">
+            <div class="dashboard__stats-header">
+              <h3 class="dashboard__stats-activity">Title</h3>
+              <button class="dashboard__stats-button"><img src="assets/images/icon-ellipsis.svg" alt="" /></button>
+            </div>
+            <div class="dashboard__stats-hours">
+              <p class="dashboard__stats-current">xhrs</p>
+              <p class="dashboard__stats-previous">Last Week - xxhrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-item">
+          <div class="dashboard__stats-banner yellow-bg">
+            <img src="assets/images/icon-self-care.svg" alt="" class="banner-image" />
+          </div>
+          <div class="dashboard__stats">
+            <div class="dashboard__stats-header">
+              <h3 class="dashboard__stats-activity">Title</h3>
+              <button class="dashboard__stats-button"><img src="assets/images/icon-ellipsis.svg" alt="" /></button>
+            </div>
+            <div class="dashboard__stats-hours">
+              <p class="dashboard__stats-current">xhrs</p>
+              <p class="dashboard__stats-previous">Last Week - xxhrs</p>
+            </div>
+          </div>
         </div>
         <div class="dashboard-item">
           <div class="dashboard__stats-banner orange-bg">
@@ -38,73 +138,10 @@
               <h3 class="dashboard__stats-activity">Title</h3>
               <button class="dashboard__stats-button"><img src="assets/images/icon-ellipsis.svg" alt="" /></button>
             </div>
-            <p class="dashboard__stats-current">xhrs</p>
-            <p class="dashboard__stats-previous">Last Week - xxhrs</p>
-          </div>
-        </div>
-        <div class="dashboard-item">
-          <div class="dashboard__stats-banner blue-bg">
-            <img src="assets/images/icon-play.svg" alt="" class="banner-image" />
-          </div>
-          <div class="dashboard__stats">
-            <div class="dashboard__stats-header">
-              <h3 class="dashboard__stats-activity">Title</h3>
-              <button class="dashboard__stats-button"><img src="assets/images/icon-ellipsis.svg" alt="" /></button>
+            <div class="dashboard__stats-hours">
+              <p class="dashboard__stats-current">xhrs</p>
+              <p class="dashboard__stats-previous">Last Week - xxhrs</p>
             </div>
-            <p class="dashboard__stats-current">xhrs</p>
-            <p class="dashboard__stats-previous">Last Week - xxhrs</p>
-          </div>
-        </div>
-        <div class="dashboard-item">
-          <div class="dashboard__stats-banner pink-bg">
-            <img src="assets/images/icon-study.svg" alt="" class="banner-image" />
-          </div>
-          <div class="dashboard__stats">
-            <div class="dashboard__stats-header">
-              <h3 class="dashboard__stats-activity">Title</h3>
-              <button class="dashboard__stats-button"><img src="assets/images/icon-ellipsis.svg" alt="" /></button>
-            </div>
-            <p class="dashboard__stats-current">xhrs</p>
-            <p class="dashboard__stats-previous">Last Week - xxhrs</p>
-          </div>
-        </div>
-        <div class="dashboard-item">
-          <div class="dashboard__stats-banner green-bg">
-            <img src="assets/images/icon-exercise.svg" alt="" class="banner-image" />
-          </div>
-          <div class="dashboard__stats">
-            <div class="dashboard__stats-header">
-              <h3 class="dashboard__stats-activity">Title</h3>
-              <button class="dashboard__stats-button"><img src="assets/images/icon-ellipsis.svg" alt="" /></button>
-            </div>
-            <p class="dashboard__stats-current">xhrs</p>
-            <p class="dashboard__stats-previous">Last Week - xxhrs</p>
-          </div>
-        </div>
-        <div class="dashboard-item">
-          <div class="dashboard__stats-banner purple-bg">
-            <img src="assets/images/icon-social.svg" alt="" class="banner-image" />
-          </div>
-          <div class="dashboard__stats">
-            <div class="dashboard__stats-header">
-              <h3 class="dashboard__stats-activity">Title</h3>
-              <button class="dashboard__stats-button"><img src="assets/images/icon-ellipsis.svg" alt="" /></button>
-            </div>
-            <p class="dashboard__stats-current">xhrs</p>
-            <p class="dashboard__stats-previous">Last Week - xxhrs</p>
-          </div>
-        </div>
-        <div class="dashboard-item">
-          <div class="dashboard__stats-banner yellow-bg">
-            <img src="assets/images/icon-self-care.svg" alt="" class="banner-image" />
-          </div>
-          <div class="dashboard__stats">
-            <div class="dashboard__stats-header">
-              <h3 class="dashboard__stats-activity">Title</h3>
-              <button class="dashboard__stats-button"><img src="assets/images/icon-ellipsis.svg" alt="" /></button>
-            </div>
-            <p class="dashboard__stats-current">xhrs</p>
-            <p class="dashboard__stats-previous">Last Week - xxhrs</p>
           </div>
         </div>
       </section>
