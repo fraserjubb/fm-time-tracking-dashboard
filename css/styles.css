@@ -145,7 +145,7 @@ Grid
   grid-template-columns: repeat(4, var(--grid-column-width));
 }
 
-.grid--2-rows {
+.grid--rows {
   grid-template-rows: repeat(2, 1fr);
 }
 
@@ -181,6 +181,7 @@ Grid
 
 .dashboard__profile-name {
   font-size: var(--fs-xl);
+  font-weight: var(--fw-light);
   line-height: var(--lh-profile-name);
   color: white;
 }
@@ -239,7 +240,7 @@ Grid
   width: fit-content;
   height: fit-content;
   margin-top: -0.375rem; /* -6px */
-  margin-right: -1.125rem; /* 18px */
+  margin-right: 1.125rem; /* 18px */
   opacity: 0.9;
 }
 
@@ -275,11 +276,14 @@ Grid
 
 .dashboard__stats-activity {
   font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
   color: white;
 }
 
 .dashboard__stats-current {
   font-size: var(--fs-2xl);
+  font-weight: var(--fw-light);
+  margin-bottom: 8px;
   color: white;
 }
 
