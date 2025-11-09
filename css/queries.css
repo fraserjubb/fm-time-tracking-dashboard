@@ -94,6 +94,60 @@ TABLET:
 MOBILE:
 ********************************
 */
-
 @media (max-width: 640px) {
+  :root {
+    /* Font sizes (in rem) */
+    --fs-2xl: 2rem; /* 32px */
+
+    /* Containers */
+    --stats-height: 122px; /* 122px */
+
+    /* Grid Values */
+    --grid-width: 327px; /* 327px */
+    --grid-height: 1307px; /* 1307px */
+    --grid-column-width: 100%; /* 188px */
+  }
+
+  .wrapper {
+    height: auto;
+    margin: 81px auto;
+  }
+  .grid--1-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid--rows {
+    grid-template-rows: repeat(7, 1fr);
+  }
+
+  /* Profile Card */
+  .dashboard__profile-card {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  /* Timeframe Card */
+  .dashboard__timeframe {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  /* Stats Card */
+  .dashboard__stats-header {
+    margin-bottom: 0.5rem; /* 8px */
+  }
+
+  .dashboard__stats-button {
+    width: 21px;
+  }
+
+  .dashboard__stats-hours {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dashboard__stats-current {
+    margin-bottom: 0;
+  }
 }
