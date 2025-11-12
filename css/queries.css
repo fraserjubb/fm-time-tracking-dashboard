@@ -148,4 +148,9 @@ MOBILE:
   .dashboard__stats-current {
     margin-bottom: 0;
   }
+
+  /* Attribute */
+  .attribution {
+    margin: 2rem;
+  }
 }
