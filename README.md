@@ -40,7 +40,7 @@ This is a solution to [this challenge on Frontend Mentor](https://www.frontendme
 
 In this particular project:
 
-1. First time working with any json files and using fetch requests. I opted to not use `async` in this instance for both practice and as it was only a simple json file.
+1. This was my first time working with any json files and using fetch requests. I opted to not use `async` in this instance for both practice and as it was only a simple json file.
 
 2. I discovered that `toggle` also has a `force` parameter which essentially works as a Boolean. Useful for if wanting a condition to be met for it to be used.
 
