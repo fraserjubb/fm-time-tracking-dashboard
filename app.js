@@ -96,5 +96,5 @@ wrapper.classList.remove('visible'); // ensure hidden on first load
 
 loadDashboardData().then(() => {
   updateDashboard('weekly');
-  wrapper.classList.add('visible');
+  // wrapper.classList.add('visible');
 });
