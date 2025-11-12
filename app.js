@@ -1,3 +1,9 @@
+/*
+*********
+SELECT ELEMENTS
+*********
+*/
+const statCard = Array.from(document.querySelectorAll('.dashboard__stats'));
 const statTitleList = Array.from(document.querySelectorAll('.dashboard__stats-activity'));
 const statCurrentList = Array.from(document.querySelectorAll('.dashboard__stats-current'));
 const statPreviousList = Array.from(document.querySelectorAll('.dashboard__stats-previous'));
@@ -6,6 +12,11 @@ const dailyBtn = document.querySelector('#daily');
 const weeklyBtn = document.querySelector('#weekly');
 const monthlyBtn = document.querySelector('#monthly');
 
+/*
+*********
+FETCH JSON FILE DATA
+*********
+*/
 let dashboardData = null;
 function loadDashboardData() {
   return fetch('data.json')
@@ -25,9 +36,18 @@ function loadDashboardData() {
     });
 }
 
-loadDashboardData().then(() => updateDashboard('weekly'));
-
+/*
+*********
+FUNCTIONS
+*********
+*/
 function updateDashboard(timeframe) {
+  const previousLabels = {
+    daily: 'Yesterday',
+    weekly: 'Last Week',
+    monthly: 'Last Month',
+  };
+
   // Style Text
   dailyBtn.classList.toggle('white-text', timeframe === 'daily');
   weeklyBtn.classList.toggle('white-text', timeframe === 'weekly');
@@ -39,16 +59,42 @@ function updateDashboard(timeframe) {
 
     statCurrentList[i].textContent = `${item.timeframes[timeframe].current}hrs`;
 
-    const previousLabels = {
-      daily: 'Yesterday',
-      weekly: 'Last Week',
-      monthly: 'Last Month',
-    };
-
-    statPreviousList[i].textContent = `${previousLabels[timeframe]} - ${item.timeframes.daily.previous}hrs`;
+    statPreviousList[i].textContent = `${previousLabels[timeframe]} - ${item.timeframes[timeframe].previous}hrs`;
   });
 }
 
-dailyBtn.addEventListener('click', () => updateDashboard('daily'));
-weeklyBtn.addEventListener('click', () => updateDashboard('weekly'));
-monthlyBtn.addEventListener('click', () => updateDashboard('monthly'));
+function selectCard(e) {
+  const clickedCard = e.currentTarget;
+  const isSelected = clickedCard.classList.contains('dashboard__stats--selected');
+
+  statCard.forEach(card => {
+    card.classList.remove('dashboard__stats--selected');
+    clickedCard.classList.toggle('dashboard__stats--selected', !isSelected);
+  });
+}
+
+/*
+*********
+EVENT LISTENERS
+*********
+*/
+// Select a timeframe:
+[dailyBtn, weeklyBtn, monthlyBtn].forEach(btn => btn.addEventListener('click', () => updateDashboard(btn.id)));
+
+// Select a card:
+statCard.forEach(card => {
+  card.addEventListener('click', selectCard);
+});
+
+/*
+*********
+INITIAL PAGE LOAD
+*********
+*/
+const wrapper = document.querySelector('.wrapper');
+wrapper.classList.remove('visible'); // ensure hidden on first load
+
+loadDashboardData().then(() => {
+  updateDashboard('weekly');
+  wrapper.classList.add('visible');
+});
