@@ -40,22 +40,34 @@ This is a solution to [this challenge on Frontend Mentor](https://www.frontendme
 
 In this particular project:
 
-1.
+1. First time working with any json files and using fetch requests. I opted to not use `async` in this instance for both practice and as it was only a simple json file.
 
-```css
-[INSERT ANY CODE HERE]
+2. I discovered that `toggle` also has a `force` parameter which essentially works as a Boolean. Useful for if wanting a condition to be met for it to be used.
+
+```js
+const previousLabels = {
+  daily: 'Yesterday',
+  weekly: 'Last Week',
+  monthly: 'Last Month',
+};
+
+// Style Text
+dailyBtn.classList.toggle('white-text', timeframe === 'daily');
+weeklyBtn.classList.toggle('white-text', timeframe === 'weekly');
+monthlyBtn.classList.toggle('white-text', timeframe === 'monthly');
 ```
+
+3. I learned that CSS grid items can overlap one another. I don't yet have too much experience using grid so still fairly new to it. Useful to know!
 
 ### Continued Development
 
 After submitting this project, I wish to develop the following:
 
-1. [INSERT TEXT HERE]
+1. Get more comfortable using fetch and css grid. It would just help to increase my speed. It will come with more practice and projects.
 
 ### Useful Resources
 
-- Nothing of note used for this project.
-- [INSERT TEXT TO APPEAR HERE (SPECIFY MEDIA TYPE HERE)](link) - [DESCRIPTION OF HOW IT HELPED HERE]
+- [How to FETCH data from an API using JavaScript (YouTube Video)](https://www.youtube.com/watch?v=37vxWr0WgQk) - A nice and simple explanation of how fetch works with API.
 
 ## Noteworthy Updates Since Initial Submission
 
@@ -71,4 +83,3 @@ After submitting this project, I wish to develop the following:
 <a href="mailto:fraserjubb.dev@gmail.com"><img height="30px" align="left" alt="Gmail" style="padding-right:10px" title="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=plastic&logo=gmail&logoColor=white"/></a>
 
 <br/>
-# fm-time-tracking-dashboard
