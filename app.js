@@ -91,10 +91,7 @@ statCard.forEach(card => {
 INITIAL PAGE LOAD
 *********
 */
-const wrapper = document.querySelector('.wrapper');
-wrapper.classList.remove('visible'); // ensure hidden on first load
 
 loadDashboardData().then(() => {
   updateDashboard('weekly');
-  // wrapper.classList.add('visible');
 });
