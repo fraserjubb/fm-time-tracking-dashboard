@@ -128,8 +128,13 @@ MAIN:
   justify-content: center;
   align-items: center;
   height: 100vh;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
+.wrapper.visible {
+  opacity: 1;
+}
 /* 
 ********
 Grid
@@ -360,12 +365,4 @@ UTILITY CLASSES:
 
 .white-text {
   color: white;
-}
-
-.wrapper {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-.wrapper.visible {
-  opacity: 1;
 }
