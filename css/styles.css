@@ -2,6 +2,7 @@
   /* Colors: */
   --clr-navy-950: #0e1323;
   --clr-navy-900: #1c204b;
+  --clr-navy-850: #272c63;
   --clr-navy-800: #33397a;
   --clr-navy-200: #bbc0ff;
   --clr-orange-300: #ff8b64;
@@ -255,6 +256,16 @@ Grid
   z-index: 99;
 }
 
+.dashboard__stats:hover,
+.dashboard__stats--selected {
+  cursor: pointer;
+  background-color: var(--clr-navy-800);
+}
+
+.dashboard__stats:active {
+  background-color: var(--clr-navy-850);
+}
+
 .dashboard__stats-header {
   display: flex;
   justify-content: space-between;
@@ -267,7 +278,7 @@ Grid
 }
 
 .dashboard__stats-button:hover {
-  cursor: pointer;
+  cursor: default;
   opacity: 0.75;
 }
 
@@ -349,4 +360,12 @@ UTILITY CLASSES:
 
 .white-text {
   color: white;
+}
+
+.wrapper {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.wrapper.visible {
+  opacity: 1;
 }
