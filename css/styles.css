@@ -128,12 +128,12 @@ MAIN:
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* opacity: 0;
-  transition: opacity 0.3s ease-in-out; */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .wrapper.visible {
-  /* opacity: 1; */
+  opacity: 1;
 }
 /* 
 ********
@@ -208,23 +208,25 @@ Grid
   color: var(--clr-purple-500);
 }
 
+.dashboard__timeframe button {
+  background: none;
+  border: none;
+  color: var(--clr-purple-500);
+  font-size: var(--fs-sm);
+  cursor: pointer;
+}
+
+.dashboard__timeframe button:hover {
+  color: white;
+  opacity: 0.75;
+}
+
 .dashboard__timeframe li {
   margin-bottom: var(--space-sm);
 }
 
 .dashboard__timeframe li:last-child {
   margin-bottom: 0;
-}
-
-.dashboard__timeframe li:hover {
-  cursor: pointer;
-  color: white;
-  opacity: 0.75;
-}
-
-.dashboard__timeframe li,
-.dashboard__timeframe li * {
-  cursor: pointer;
 }
 
 /* Stats Card */
@@ -363,6 +365,6 @@ UTILITY CLASSES:
   background-color: var(--clr-yellow-300);
 }
 
-.white-text {
+button.white-text {
   color: white;
 }
