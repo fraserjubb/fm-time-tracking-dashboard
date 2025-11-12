@@ -313,19 +313,19 @@ FOOTER:
   margin-bottom: var(--space-xl);
 
   font-size: var(--fs-xs);
-  color: var(--clr-attribution);
+  color: var(--clr-purple-500);
 }
 
 /* LINKS */
 /* Default State */
 .attribution a:link {
-  color: var(--clr-attribution);
+  color: var(--clr-purple-500);
   text-decoration: none;
 }
 
 /* Visited State */
 .attribution a:visited {
-  color: var(--clr-attribution);
+  color: var(--clr-purple-500);
 }
 
 /* State On Hover / Whilst being clicked */
