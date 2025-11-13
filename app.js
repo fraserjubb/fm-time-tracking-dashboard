@@ -28,7 +28,6 @@ function loadDashboardData() {
     })
     .then(data => {
       dashboardData = data;
-      return data;
     })
     .catch(error => {
       console.error('Failed to load dashboard data:', error);
@@ -55,11 +54,16 @@ function updateDashboard(timeframe) {
 
   // Update stats shown
   dashboardData.forEach((item, i) => {
+    const currentTime = item.timeframes[timeframe].current;
+    const previousTime = item.timeframes[timeframe].previous;
+    const currentUnit = currentTime <= 1 ? 'hr' : 'hrs';
+    const previousUnit = previousTime <= 1 ? 'hr' : 'hrs';
+
     statTitleList[i].textContent = item.title;
 
-    statCurrentList[i].textContent = `${item.timeframes[timeframe].current}hrs`;
+    statCurrentList[i].textContent = `${currentTime}${currentUnit}`;
 
-    statPreviousList[i].textContent = `${previousLabels[timeframe]} - ${item.timeframes[timeframe].previous}hrs`;
+    statPreviousList[i].textContent = `${previousLabels[timeframe]} - ${previousTime}${previousUnit}`;
   });
 }
 
