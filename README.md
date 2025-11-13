@@ -71,7 +71,11 @@ After submitting this project, I wish to develop the following:
 
 ## Noteworthy Updates Since Initial Submission
 
-1. No major updates since submitted.
+1. HTML - Improved semantic tags. Updated `dashboard__profile__name` to an `h1` element. Updated `dashboard__stats-activity` to `h2` elements. Wrapped cards in `article` tags instead of `div`s.
+
+2. JavaScript - Added logic so that units are either 'hr' or 'hrs' as more dynamic.
+
+3. JavaScript - Removed `return` statement for `data` in `loadDashboardData` function as it is being stored in a variable so not needed.
 
 ## Connect With Me
 
